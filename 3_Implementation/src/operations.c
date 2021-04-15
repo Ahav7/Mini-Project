@@ -1,3 +1,13 @@
+/**
+ * @file operations.c
+ * @author Hemanth (https://github.com/Ahav7/Mini-Project)
+ * @brief 
+ * @version 0.1
+ * @date 2021-04-15
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
 #include "operations.h"
 #include<math.h>
 float total_ser(float r1, float r2,float r3)
