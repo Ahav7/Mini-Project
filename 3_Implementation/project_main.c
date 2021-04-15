@@ -1,7 +1,7 @@
 #include "head.h"
-void show_record();
-void reset_score();
-void help();
+void show_record(void);
+void reset_score(void);
+void help(void);
 void edit_score(float , char []);
 int main()
      {
