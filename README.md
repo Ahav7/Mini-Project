@@ -1,1 +1,12 @@
-# Mini-Project
+# Folder Structure
+
+
+
+
+
+
+
+
+
+
+# Challenges Faced
