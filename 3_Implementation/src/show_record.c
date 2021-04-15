@@ -1,4 +1,4 @@
-#include <head.h>
+#include "head.h"
 void show_record()
 {
     char name[100];
