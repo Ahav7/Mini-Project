@@ -1,3 +1,13 @@
+/**
+ * @file operations.h
+ * @author Hemanth (https://github.com/Ahav7/Mini-Project)
+ * @brief 
+ * @version 0.1
+ * @date 2021-04-15
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
 #include "unity.h"
 #include "operations.h"
 
