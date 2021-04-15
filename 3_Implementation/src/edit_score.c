@@ -1,4 +1,4 @@
-#include <head.h>
+#include "head.h"
 void edit_score(float score,char playernm[100])
 {
     system("cls");
