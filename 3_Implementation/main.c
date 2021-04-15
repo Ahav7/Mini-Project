@@ -1,20 +1,18 @@
 #include "operations.h"
 #include<stdio.h>
 #include<math.h>
-enum operations{ 
-    Total_ser=1,
-    Total_par,
-    Cal_res, 
-    Res_val , 
-    Unit_con
-};
+
+/* Valid operations */
+enum operations{ Total_ser=1, Total_par, Cal_res, Res_val , Unit_con};
+
+/* Display the menu of operations supported */
 void calculator_menu(void);
 
 
 /* Start of the application */
 int main(int argc, char *argv[])
 {
-    printf("\n****Resistance  Calculator****\n");
+    printf("\n****Circuit Calculator****\n");
     while(1)
     {
         calculator_menu();
@@ -23,14 +21,14 @@ int main(int argc, char *argv[])
 
 void calculator_menu(void)
 {
-    printf("\nThese are the available operations which you can perform\n");
-    printf("\n1. Total Series Resistance\n")
-            "\2. Total Parallel Resistance\n")
+    printf("\nAvailable Operations\n");
+    printf("\n1. Total Series Resistance\n"
+            "2. Total Parallel Resistance\n"
             "3. Resistance value based on voltage and current\n"
             "4. Resistance value based on color code\n"
             "5. Unit conversion\n"
             "6. Exit");
-    printf("\n\n\tEnter your choice \n\n");
+    printf("\n\n\tEnter your choice\n\n");
    
     int calculator_operation;
     float r1,r2,r3;
@@ -38,15 +36,13 @@ void calculator_menu(void)
 
     if(6 == calculator_operation)
     {
-        printf("\nThank you.");
-        printf("\nExiting the application.");
+        printf("\nThank you. Exiting the Application\n");
         exit(0);
     }
 
     if((calculator_operation != 1)&&(calculator_operation != 2)&&(calculator_operation !=3)&&(calculator_operation !=4)&&(calculator_operation !=5))
    {
-       printf("\n\t---Wrong choice---);
-       printf("\n\t Enter valid option\n");
+       printf("\n\t---Wrong choice---\n\tEnter valid choice\n");
       return;
    }
     switch(calculator_operation)
@@ -80,17 +76,17 @@ void calculator_menu(void)
         case Res_val:
 
         L2:    printf("\nEnter the 5-character color description of the resistor:\n\n ");
-            printf("0 = black\n")
-            "1 = brown\n")
-            "2 = red\n")
-            "3 = orange\n")
-            "4 = yellow\n")
-            "5 = green\n")
-            "6 = blue\n")
-            "7 = violet\n")
-            "8 = grey\n")
-            "9 = white\n")
-            "10 = gold\n")
+            printf("0 = black\n"
+            "1 = brown\n"
+            "2 = red\n"
+            "3 = orange\n"
+            "4 = yellow\n"
+            "5 = green\n"
+            "6 = blue\n"
+            "7 = violet\n"
+            "8 = grey\n"
+            "9 = white\n"
+            "10 = gold\n"
             "11 = silver\n\n");
     
     int a,b,c,d,e;
