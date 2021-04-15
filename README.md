@@ -9,5 +9,5 @@
 |1_Requirements|Documents about requirements and research|
 |2_Design|Documents specifying design details|
 |3_Implementation|Code and related documentation|
-|4_Test_plan||Documents with test plans and procedures|
+|4_Test_plan|Documents with test plans and procedures|
  
