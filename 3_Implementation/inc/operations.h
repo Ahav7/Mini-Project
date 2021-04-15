@@ -1,9 +1,13 @@
-/** 
- *
-* @file operations.h
-* Resistance Calculator application with dfferent circuit operations
-*
-*/
+/**
+ * @file operations.h
+ * @author Hemanth (https://github.com/Ahav7/Mini-Project)
+ * @brief 
+ * @version 0.1
+ * @date 2021-04-15
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
 #ifndef __OPERATIONS_H__
 #define __OPERATIONS_H__
 
