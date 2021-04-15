@@ -1,9 +1,13 @@
 #include "operations.h"
 #include<stdio.h>
-#include<math.h>
-
 /* Valid operations */
-enum operations{ Total_ser=1, Total_par, Cal_res, Res_val , Unit_con};
+enum operations{ 
+    Total_ser=1,
+    Total_par,
+    Cal_res, 
+    Res_val , 
+    Unit_con
+};
 
 /* Display the menu of operations supported */
 void calculator_menu(void);
@@ -21,14 +25,14 @@ int main(int argc, char *argv[])
 
 void calculator_menu(void)
 {
-    printf("\nAvailable Operations\n");
-    printf("\n1. Total Series Resistance\n"
-            "2. Total Parallel Resistance\n"
-            "3. Resistance value based on voltage and current\n"
-            "4. Resistance value based on color code\n"
-            "5. Unit conversion\n"
-            "6. Exit");
-    printf("\n\n\tEnter your choice\n\n");
+    printf("\nThese are the available operations which you can perform\n");
+    printf("\n1. Total Series Resistance\n")
+    printf("\n2. Total Parallel Resistance\n")
+    printf("\n3. Resistance value based on voltage and current\n")
+    printf("\n4. Resistance value based on color code\n")
+    printf("\n5. Unit conversion\n")
+    printf("\n6. Exit");
+    printf("\n\n\tEnter your choice \n\n");
    
     int calculator_operation;
     float r1,r2,r3;
@@ -36,7 +40,8 @@ void calculator_menu(void)
 
     if(6 == calculator_operation)
     {
-        printf("\nThank you. Exiting the Application\n");
+        printf("\nThank you.");
+        printf("\nExiting the application.");
         exit(0);
     }
 
@@ -76,18 +81,18 @@ void calculator_menu(void)
         case Res_val:
 
         L2:    printf("\nEnter the 5-character color description of the resistor:\n\n ");
-            printf("0 = black\n"
-            "1 = brown\n"
-            "2 = red\n"
-            "3 = orange\n"
-            "4 = yellow\n"
-            "5 = green\n"
-            "6 = blue\n"
-            "7 = violet\n"
-            "8 = grey\n"
-            "9 = white\n"
-            "10 = gold\n"
-            "11 = silver\n\n");
+            printf("0 = black\n")
+            printf("1 = brown\n")
+            printf("2 = red\n")
+            printf("3 = orange\n")
+            printf"4 = yellow\n")
+            printf"5 = green\n")
+            printf("6 = blue\n")
+            printf("7 = violet\n")
+            printf("8 = grey\n")
+            printf("9 = white\n")
+            printf("10 = gold\n")
+            printf("11 = silver\n\n");
     
     int a,b,c,d,e;
     scanf("%d%d%d%d%d",&a,&b,&c,&d,&e);
