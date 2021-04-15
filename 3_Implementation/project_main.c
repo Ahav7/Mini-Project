@@ -1,8 +1,4 @@
-#include<head.h>
-#include<stdio.h>
-#include<ctype.h>
-#include<stdlib.h>
-#include<string.h>
+#include "head.h"
 void show_record();
 void reset_score();
 void help();
