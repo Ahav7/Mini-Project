@@ -1,21 +1,26 @@
-PROJ_NAME=quiz_game
-TEST_PROJ_NAME=Test_$(PROJ_NAME)
+ROJECT_NAME=quiz
 
-#All source code files
-SRC =main.c\
-src/edit_score.c\
-src/reset_score.c\
-src/show_record.c
+INC= inc
+SSRC=src
+
+BUILD = build
+
+SRC=main.c \
+src/get_details_all.c \
+src/add_employee.c \
+src/get_salary_by_id.c \
+src/del_employee.c \
+src/increment.c \
+src/calculate_salary.c \
+src/get_detail_employee.c
+
+# TEST_SRC=test_complex.c\
+# unity.c
 
 
-COV_SRC=test.c
-# All test source files
-TEST_SRC=test/test.c \
-unity/unity.c
-INC_H=inc
-INC_T= unity
+#To check if the OS is Windows or Linux and set the executable file extension and delete command accordingly
 ifdef OS
-   RM = del 
+   RM = del /q
    FixPath = $(subst /,\,$1)
    EXEC = exe
 else
@@ -25,44 +30,41 @@ else
 	  EXEC = out
    endif
 endif
+
+$(PROJECT_NAME):all
+
+# Run the target even if the matching name exists
 .PHONY: run clean test doc all
 
-all:
-	gcc -I $(INC_H) $(SRC) main.c -o $(call FixPath,$(PROJ_NAME).$(EXEC))
-	
-run:
-	$(call FixPath,$(PROJ_NAME).$(EXEC))
-test:
-	gcc -I $(INC_H) -I $(INC_T) $(TEST_SRC) $(SRC) -o $(call FixPath,$(TEST_PROJ_NAME).$(EXEC))
-	./$(call FixPath,$(TEST_PROJ_NAME).$(EXEC))
+all:$(SRC) $(INC)
+	gcc -I$(INC) -I$(SSRC) $(SRC) -o $(PROJECT_NAME).$(EXEC)
 
-coverage:
-	cp test/test.c .
-	gcc -fprofile-arcs -ftest-coverage -I $(INC_H) -I $(INC_T) unity/unity.c test.c $(SRC) -o $(call FixPath, $(TEST_PROJ_NAME).$(EXEC))
-	$(call FixPath, ./$(TEST_PROJ_NAME).$(EXEC))
-	gcov -a $(COV_SRC)
-	$(RM) *.$(EXEC)
-	$(RM) *.gcda
-	$(RM) *.gcno
-	$(RM) *.c.gcov
-	$(RM) *.DAT
-	$(RM) test.c
+run:$(PROJECT_NAME)
+	./$(PROJECT_NAME).$(EXEC)
 
 
-cppcheck:
-	cppcheck --enable=all $(SRC) main.c
-debug:
-	gcc -I $(INC_H) $(SRC) main.c -g -o $(PROJ_NAME).$(EXEC)
-	gdb $(PROJ_NAME).$(EXEC)
+# Document the code using Doxygen
+doc:
+	make -C ./documentation
 
-valgrind:
-	valgrind ./$(TEST_PROJ_NAME).$(EXEC)
+coverage:$(PROJECT_NAME)
+	gcc -fprofile-arcs -ftest-coverage $(SRC) -o $(PROJECT_NAME).$(EXEC)
+	./${PROJECT_NAME}.$(EXEC)
+	gcov -a $(SRC)
 
+valgrind:$(PROJECT_NAME)
+	valgrind --track-origins=yes ./${PROJECT_NAME}.$(EXEC)
 
-clean:
-	$(RM) *.DAT
-	$(RM) *.$(EXEC)
-	$(RM) *.gcda
-	$(RM) *.gcno
-	$(RM) *.c.gcov
+cppcheck:$(SRC)
+	cppcheck $(SRC)
 
+clean:$(SRC)
+	rm -r *gcov *gcda *gch
+
+# test:$(BUILD)
+# 	gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) $(INCLUDE_LIBS)
+# 	./$(TEST_OUTPUT)
+
+# Create new build folder if not present
+$(BUILD):
+	mkdir build
