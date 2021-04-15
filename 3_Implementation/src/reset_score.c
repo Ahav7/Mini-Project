@@ -1,4 +1,4 @@
-#include <head.h>
+#include "head.h"
 void reset_score()
 {
     system("cls");
