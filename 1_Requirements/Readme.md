@@ -3,12 +3,12 @@
 Now a days we can observe resistors in almost every electric circuit.There are different types of resistors in the market.We commonly use carbon resistors in which there is a technical difference to demonstrate the resistors.Every circuit in the world is connected in series or parallel or hybrid.To ease the process this code enables to calculate the equivalent resistance. 
 # Research
 ## Benefits
-It offers a range of benefits like:-
+It offers a range of benefits like:-\
                   1)Calculates series resistance\
                   2)Calculates parallel resistance\
-                  3)Calculates current
-                  4)Calculates resistance based on colour code
-                  5)Conversion of resistance to other unit
+                  3)Calculates current\
+                  4)Calculates resistance based on colour code\
+                  5)Conversion of resistance to other unit\
  ## Block diagram
  ![](Capture.PNG)
  # SWOT Analysis
