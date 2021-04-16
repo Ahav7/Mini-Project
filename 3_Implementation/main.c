@@ -47,7 +47,7 @@ void calculator_menu(void)
 
     if(6 == calculator_operation)
     {
-        printf("\nThank you. Exiting the Application\n");
+        printf("\nThank you. Exiting Application\n");
         exit(0);
     }
 
@@ -126,7 +126,7 @@ void calculator_menu(void)
             int i;
             scanf("%d",&i);
             if((i!= 1)&&(i!=2)&&(i!=3)&&(i!=4))
-            {printf("\n\t---Wrong choice---\n\tEnter valid choice\n");
+            {printf("\n\t*******Wrong choice*******\n\tEnter valid choice\n");
              goto L1;}
             float val;
             if(i==1)
