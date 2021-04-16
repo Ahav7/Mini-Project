@@ -23,6 +23,13 @@ It offers a range of benefits like:-
     enter the type of colour.
  # Detail Requirements
  ## High level Requirements
+ |--ID---|---------------Desscription-----------------|-----Status------|----Actual Output----|
+ |--H01--|---Resistor value based on color code-------|---Done----------|----Pass-------------|
+ |--H02--|Claculates Resistance based on voltage and current parameters|---Done-------|---Pass------|
+ |--H03--|---Unit Conversion--------------------------|---Done----------|----Pass-------------|
+ |--H04--|---Equivalent resistance in series----------|---Done----------|----Pass-------------|
+ |--H05--|---Equivalent resistance in parallel--------|---Done----------|----Pass-------------|
+## Low level Requirements
  
 
 
