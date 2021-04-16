@@ -24,6 +24,7 @@ It offers a range of benefits like:-
  # Detail Requirements
  ## High level Requirements
  |--ID---|---------------Desscription-----------------|-----Status------|----Actual Output----|
+ |-------|--------------------------------------------|-----------------|---------------------|
  |--H01--|---Resistor value based on color code-------|---Done----------|----Pass-------------|
  |--H02--|Claculates Resistance based on voltage and current parameters|---Done-------|---Pass------|
  |--H03--|---Unit Conversion--------------------------|---Done----------|----Pass-------------|
