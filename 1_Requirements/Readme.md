@@ -4,8 +4,8 @@ Now a days we can observe resistors in almost every electric circuit.There are d
 # Research
 ## Benefits
 It offers a range of benefits like:-
-                  1)Calculates series resistance
-                  2)Calculates parallel resistance
+                  1)Calculates series resistance\
+                  2)Calculates parallel resistance\
                   3)Calculates current
                   4)Calculates resistance based on colour code
                   5)Conversion of resistance to other unit
