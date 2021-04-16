@@ -11,9 +11,11 @@
 #include "operations.h"
 #include<stdio.h>
 #include<math.h>
+
+/* Valid operations */
 enum operations{ Total_ser=1, Total_par, Cal_res, Res_val , Unit_con};
 
-/* operations */
+/* Display the menu of operations supported */
 void calculator_menu(void);
 
 
@@ -27,10 +29,8 @@ int main(int argc, char *argv[])
     }
 }
 
-//User choice
 void calculator_menu(void)
 {
-    printf("************************************************************)
     printf("\nAvailable Operations\n");
     printf("\n1. Total Series Resistance\n"
             "2. Total Parallel Resistance\n"
@@ -38,7 +38,6 @@ void calculator_menu(void)
             "4. Resistance value based on color code\n"
             "5. Unit conversion\n"
             "6. Exit");
-    printf("************************************************************)
     printf("\n\n\tEnter your choice\n\n");
    
     int calculator_operation;
@@ -47,7 +46,7 @@ void calculator_menu(void)
 
     if(6 == calculator_operation)
     {
-        printf("\nThank you. Exiting Application\n");
+        printf("\nThank you. Exiting the Application\n");
         exit(0);
     }
 
@@ -60,7 +59,7 @@ void calculator_menu(void)
     {
         case Total_ser:
 
-            printf("Enter the value of resistors in ohms\n");
+            printf("Enter the value of 3 resistors in ohms\n");
             printf("Note:-If less than 3 resistors, fill zero\n");
             scanf("%f%f%f",&r1,&r2,&r3);
             printf("\nTotal series resistance = %f ohms\n", total_ser(r1,r2,r3));
@@ -72,7 +71,7 @@ void calculator_menu(void)
             scanf("%f%f%f",&r1,&r2,&r3);
             printf("\nTotal parallel resistance = %f ohms\n", total_par(r1,r2,r3));
             break;
-//Ohms law
+
         case Cal_res:
 
             printf("Enter the value of voltage and current in volts and ampere respectively\n");
@@ -85,20 +84,20 @@ void calculator_menu(void)
             break;
 
         case Res_val:
-//Resistance based on Color band
+
         L2:    printf("\nEnter the 5-character color description of the resistor:\n\n ");
             printf("0 = black\n"
-            "1 : brown\n"
-            "2 : red\n"
-            "3 : orange\n"
-            "4 : yellow\n"
-            "5 : green\n"
-            "6 : blue\n"
-            "7 : violet\n"
-            "8 : grey\n"
-            "9 : white\n"
-            "10 : gold\n"
-            "11 : silver\n\n");
+            "1 = brown\n"
+            "2 = red\n"
+            "3 = orange\n"
+            "4 = yellow\n"
+            "5 = green\n"
+            "6 = blue\n"
+            "7 = violet\n"
+            "8 = grey\n"
+            "9 = white\n"
+            "10 = gold\n"
+            "11 = silver\n\n");
     
     int a,b,c,d,e;
     scanf("%d%d%d%d%d",&a,&b,&c,&d,&e);
@@ -115,7 +114,7 @@ void calculator_menu(void)
             break;
            
         case 5:
-//Unit Conversion
+
             printf("\nAvailable Operations\n");
         L1:  printf("\n1. Kohm--->ohm\n"
             "2. ohm--->Kohm\n"
@@ -126,7 +125,7 @@ void calculator_menu(void)
             int i;
             scanf("%d",&i);
             if((i!= 1)&&(i!=2)&&(i!=3)&&(i!=4))
-            {printf("\n\t*******Wrong choice*******\n\tEnter valid choice\n");
+            {printf("\n\t---Wrong choice---\n\tEnter valid choice\n");
              goto L1;}
             float val;
             if(i==1)
