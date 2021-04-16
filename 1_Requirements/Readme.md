@@ -1,4 +1,4 @@
 # Requirements
 ## Introduction
-### .Resistors 
+*re 
 
