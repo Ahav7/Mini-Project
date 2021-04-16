@@ -10,6 +10,7 @@ It offers a range of benefits like:-
                   4)Calculates resistance based on colour code
                   5)Conversion of resistance to other unit
  ## Block diagram
+ ![](Capture.PNG)
  # SWOT Analysis
  # 4W's and 1'H
  ## Who:
