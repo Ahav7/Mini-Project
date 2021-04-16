@@ -11,7 +11,7 @@
 |3_Implementation|Code and it's related documentation|
 |4_Test_plan|Documents with test plans and procedures|
 ## Contributors List and Summary
-|SF Id|Name|Features|No.of Test Cases|Test Case Pass|
+|SF Id|Name|No.of Test Cases|Test Case Pass|
 |---------|------------------------------|-------|----------|
 |265041|Aradhyula Hemanth Krishna Sai|6|6|
 ## Challenges Faced
