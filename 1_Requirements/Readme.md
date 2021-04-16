@@ -4,11 +4,11 @@ Now a days we can observe resistors in almost every electric circuit.There are d
 # Research
 ## Benefits
 It offers a range of benefits like:-\
-                  1)Calculates series resistance\
-                  2)Calculates parallel resistance\
-                  3)Calculates current\
-                  4)Calculates resistance based on colour code\
-                  5)Conversion of resistance to other unit\
+\t\t                  1)Calculates series resistance\
+\t\t              2)Calculates parallel resistance\
+\t\t                  3)Calculates current\
+\t\t              4)Calculates resistance based on colour code\
+\t\t              5)Conversion of resistance to other unit\
  ## Block diagram
  ![](Capture.PNG)
  # SWOT Analysis
