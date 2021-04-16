@@ -12,6 +12,7 @@ It offers a range of benefits like:-
  ## Block diagram
  ![](Capture.PNG)
  # SWOT Analysis
+ ![](swot.PNG)
  # 4W's and 1'H
  ## Who:
      Can be used in engineering institutes.
