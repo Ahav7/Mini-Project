@@ -3,7 +3,7 @@
 |![code_quality_score](https://www.code-inspector.com/project/21293/score/svg)|
 |![quality_grade](https://www.code-inspector.com/project/21293/status/svg)|
 [![CodeQuality Dynamic Code Analysis Valgrind](https://github.com/Ahav7/Mini-Project/actions/workflows/Dynamic_codequality.yml/badge.svg)](https://github.com/Ahav7/Mini-Project/actions/workflows/Dynamic_codequality.yml)
-
+[![Unit Testing - Unity](https://github.com/Ahav7/Mini-Project/actions/workflows/unity.yml/badge.svg)](https://github.com/Ahav7/Mini-Project/actions/workflows/unity.yml)
 ## Folder Structure
 |Folder|Description|
 |------|-----------|
